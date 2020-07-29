@@ -4,7 +4,7 @@ class Target(models.Model):
     name = models.CharField(max_length=54)
     ra = models.DecimalField(max_digits=11, decimal_places=8)
     dec = models.DecimalField(max_digits=11, decimal_places=8)
-    obervations_number = models.IntegerField(default=0, null=True, blank=True)
+    observations_number = models.IntegerField(default=0, null=True, blank=True)
     magnitude = models.DecimalField(max_digits=5, decimal_places=3)
     importance = models.IntegerField(default=0)
     days_from_last_observations = models.IntegerField(default=0, null=True, blank=True)
