@@ -4,7 +4,7 @@ from .models import Target
 class TargetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Target
-        fields = ['name', 'ra', 'dec', 'obervations_number', 'magnitude', 'importance',
+        fields = ['name', 'ra', 'dec', 'observations_number', 'magnitude', 'importance',
                   'days_from_last_observations', 'cadence', 'priority']
 
 
